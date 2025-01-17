@@ -1,0 +1,45 @@
+/* Hide the images by default */
+.mySlides1 {
+	display: none;
+}
+
+/* Hide the images by default */
+.mySlides2 {
+	display: none;
+}
+
+.thumbnail1 {
+	cursor: pointer;
+	opacity: 0.8;
+	transition: opacity 0.3s;
+	margin: 0 1vh;
+	max-width: 5vh; /* Adjust the size of the thumbnails */
+	max-height: 5vh;
+	object-fit: cover;
+
+	border: 2px solid transparent; /* Default transparent border */
+}
+
+.thumbnail1:hover,
+.active-thumbnail {
+	opacity: 1;
+	border-color: #ffffff; /* Highlight with a white border */
+}
+
+.thumbnail2 {
+	cursor: pointer;
+	opacity: 0.8;
+	transition: opacity 0.3s;
+	margin: 0 1vh;
+	max-width: 5vh; /* Adjust the size of the thumbnails */
+	max-height: 5vh;
+	object-fit: cover;
+
+	border: 2px solid transparent; /* Default transparent border */
+}
+
+.thumbnail2:hover,
+.active-thumbnail {
+	opacity: 1;
+	border-color: #ffffff; /* Highlight with a white border */
+}

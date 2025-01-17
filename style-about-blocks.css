@@ -1,0 +1,28 @@
+.about-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-rows: repeat(2, 1fr); /* Two rows */
+    gap: 1vw; /* Adjust the gap between blocks */
+    width: 100%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+}
+
+.about-grid-item {
+    background-color: #000000, 0; /* Background color for blocks */
+    border: 0px solid #ccc; /* Border around blocks */
+    display: flex;
+
+    align-items: center;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    overflow: auto; /* Handle overflow of text */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align text to the start of the block */
+    padding-left: 1vw;
+
+    justify-content: flex-start; /* Align text to the top of the block */
+    align-items: flex-start; /* Align text to the start of the block */
+    margin-right: 4vw;
+    
+
+}

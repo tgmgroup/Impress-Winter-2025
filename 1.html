@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+
+		<link href="style.css" rel="stylesheet" />
+		<link href="style-slideshow.css" rel="stylesheet" />
+		<link href="style-canvas.css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<meta
+			name="viewport"
+			content="width=1920, height=1080, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<title>Impress Magazine - Winter, 2025</title>
+		<link rel="icon" type="image/x-icon" href="nav-images/logo.png" />
+		<link id="favicon" rel="shortcut icon" href="nav-images/logo.png" />
+		<script type="text/javascript" src="scripts.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+	</head>
+
+	<body>
+		<div id="viewport">
+			<div id="container">
+				<!-- Your website content goes here -->
+
+				<div class="item sidebar sidebar-left">
+					<div class="item header header-left">
+						<form>
+							<button
+								class="menu-button clickable"
+								type="submit"
+								formaction="../index.html"
+							>
+								<h6>Impress<br />Magazine</h6>
+							</button>
+						</form>
+					</div>
+
+					<div class="left-menu">
+						<div class="left-menu-button">
+							<a href="index.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/front.png"
+									alt="Link to Front Cover"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="1.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/1.png"
+									alt="Link to Page 1"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="1.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/2.png"
+									alt="Link to Page 2"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="3.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/3.png"
+									alt="Link to Page 3"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="3.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/4.png"
+									alt="Link to Page 4"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="5.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/5.png"
+									alt="Link to Page 5"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="5.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/6.png"
+									alt="Link to Page 6"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="cover.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/back.png"
+									alt="Link to Back Cover"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="about.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/about.png"
+							/></a>
+						</div>
+					</div>
+					<!-- Closing the left-menu div -->
+
+					<div class="item footer footer-left-top">
+						<form>
+							<button
+								class="menu-button-small clickable"
+								type="submit"
+								formaction="index.html"
+							>
+								<h6>&lt; Previous</h6>
+							</button>
+						</form>
+					</div>
+					<div class="item footer footer-left-bottom">
+						<form>
+							<button
+								class="menu-button-small clickable"
+								type="submit"
+								formaction="3.html"
+							>
+								<h6>Next &gt;</h6>
+							</button>
+						</form>
+					</div>
+				</div>
+				<!-- Closing the sidebar div -->
+
+				<div class="item gap-left"></div>
+
+				<div
+					class="item content-center"
+					style="
+						background-image: url('Web/page012.jpg');
+						background-size: contain;
+						background-position: left;
+						background-attachment: local;
+						background-repeat: no-repeat;
+						background-color: #000000;
+					"
+				>
+					<div class="center-items">
+						<!-- Buttons -->
+
+						<button
+							class="center-items right-nav-buttons clickable"
+							type="button"
+							onClick="PlayAndShow('audio1-1', 'text1-1', 'play1-1')"
+							style="position: absolute; top: 5vw; left: 89vw"
+						>
+							<img
+								id="play1-1"
+								class="audio-button-image clickable"
+								src="nav-images/play-g79150a13d_1280.png"
+							/>
+							<h6>Chocolate Money</h6>
+						</button>
+
+						<form
+							action="https://sites.google.com/isesaki-school.ed.jp/silk-story"
+							method="get"
+							target="_blank"
+						>
+							<button
+								class="center-items right-nav-buttons clickable"
+								type="submit"
+								style="position: absolute; top: 13vw; left: 89vw"
+							>
+								<img
+									id="play3-1"
+									class="audio-button-image clickable"
+									src="nav-images/play-g79150a13d_1280.png"
+								/>
+								<h6>El Tió de Nadal</h6>
+							</button>
+						</form>
+
+						<form
+							action="https://impress-kuwamaru-halloween-adventure.isesaki.in/"
+							method="get"
+							target="_blank"
+						>
+							<button
+								class="center-items right-nav-buttons clickable"
+								type="submit"
+								style="position: absolute; top: 21vw; left: 89vw"
+							>
+								<img
+									id="play3-1"
+									class="audio-button-image clickable"
+									src="nav-images/link.png"
+								/>
+								<h6>Vocabulary Word Search</h6>
+							</button>
+						</form>
+
+						<!-- Modal Text -->
+
+						<div class="items hidden-text" id="text1-1">
+							<!-- Modal content -->
+							<div class="modal-content-slideshow">
+								<div class="modal-header">
+									<span
+										class="close clickable"
+										onClick="ResetPlayAndShow('audio1-1', 'text1-1', 'play1-1')"
+										>&times;</span
+									>
+								</div>
+
+								<div class="modal-body">
+									<!-- Add the image slideshow here -->
+									<div id="slideshow-container" class="slideshow-container">
+										<!-- Full-width images with number text -->
+										<div class="mySlides">
+											<div class="slide-content">
+												<img
+													src="Web/1 - Tajima Yahei/1.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="George, David, and Nick at the Tajima Yahei Sericulture Farm"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-1a', 'play1-1a')"
+														><img
+															id="play1-1a"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+													<p style="font-size: 3vh; line-height: 1.6">
+														Isesaki is not a big city in Japan, but there are
+														quite a few unique things in our town! On October
+														4th, three of us (David, George, and Nick), went to
+														the Tajima Yahei Sericulture Farm. It’s a World
+														Heritage site and was part of Japan’s silk
+														revolution*. Have you ever been there? We thought we
+														knew the story of this World Heritage, but we took a
+														look* again and learned some new things that we’ll
+														share with you, so keep reading!
+													</p>
+													<p style="font-size: 1.6vh; line-height: 1.1">
+														* revolution: 革命（かくめい）<br />
+														* take a look: 見てみる
+													</p>
+													<div class="numbertext">1 / 6</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides">
+											<div class="slide-content">
+												<img
+													src="Web/1 - Tajima Yahei/2.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="The Story of Tajima Yahei: The Yagura"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-1b', 'play1-1b')"
+														><img
+															id="play1-1b"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+													<h4>Keeping Cool: <br />The Story of Tajima Yahei</h4>
+													<p style="font-size: 3vh; line-height: 1.5">
+														Tajima Yahei (1822-1898) changed the way that*
+														silkworms were farmed* in Japan. He understood that
+														it was important to keep silkworms cool. He built a
+														silkworm farm and added a yagura (a roof with
+														windows). This style became known as
+														<i>“Seiryo-iku”</i> and was copied by many Japanese
+														farmers.
+													</p>
+													<p style="font-size: 1.6vh; line-height: 1.2">
+														* the way that: ～の方法 <br />
+														* to farm: 養殖（ようしょく）<br />
+														* 農耕（のうこう）する<br />
+													</p>
+													<div class="numbertext">2 / 6</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides">
+											<div class="slide-content">
+												<img
+													src="Web/1 - Tajima Yahei/3.JPG"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="The Story of Tajima Yahei: From Isesaki to Italy"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-1c', 'play1-1c')"
+														><img
+															id="play1-1c"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+													<h4>From Isesaki to Italy</h4>
+													<p style="font-size: 3vh; line-height: 1.6">
+														Did you know that Shibusawa Eichi and Tajima Yahei
+														were relatives*? With some help from Mr. Shibusawa,
+														Mr. Tajima started to sell silkworm eggs to Italy
+														and other European countries. In 1879, he visited
+														Italy by ship. It took two months to get there! And
+														he was the first person from Gunma to go all the
+														way* around the world.
+													</p>
+													<p style="font-size: 1.6vh; line-height: 1.2">
+														* relatives: 親戚（しんせき） <br />
+														* all the way: 行くところまで・完全に<br />
+													</p>
+													<div class="numbertext">3 / 6</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides">
+											<div class="slide-content">
+												<img
+													src="Web/1 - Tajima Yahei/4.JPG"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="The Story of Tajima Yahei: Under the Microscope"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-1d', 'play1-1d')"
+														><img
+															id="play1-1d"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+													<h4>Under the Microscope</h4>
+													<p style="font-size: 3vh; line-height: 1.6">
+														Tajima Yahei learned how to use microscopes* to
+														study silkworms in Europe, and he brought one home
+														from Italy to study sick silkworms. His research
+														helped people grow more silkworms.
+													</p>
+													<p style="font-size: 1.6vh; line-height: 1.2">
+														* microscope: けんびきょう顕微鏡 <br />
+													</p>
+													<div class="numbertext">4 / 6</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides">
+											<div class="slide-content">
+												<img
+													src="Web/1 - Tajima Yahei/5.JPG"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="The Story of Tajima Yahei: Amazing Silk"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-1e', 'play1-1e')"
+														><img
+															id="play1-1e"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+													<h4>Amazing Silk</h4>
+													<p style="font-size: 3vh; line-height: 1.6">
+														At this time, the world wanted a lot of silk, and
+														people wanted silk and silkworms from Japan. At its
+														height*, the Tajima Yahei farm employed* around 100
+														workers and made millions* in today’s* money.
+													</p>
+													<p style="font-size: 1.6vh; line-height: 1.2">
+														* height: さいせいき最盛期 <br />
+														* employ: やと雇う <br />
+														* millions: 何百万 <br />
+														* today’s: 現在の <br />
+													</p>
+													<div class="numbertext">5 / 6</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides">
+											<div class="slide-content">
+												<img
+													src="Web/1 - Tajima Yahei/6.JPG"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="The Story of Tajima Yahei: The	10th Anniversary"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-1f', 'play1-1f')"
+														><img
+															id="play1-1f"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+													<h4>The 10th Anniversary</h4>
+													<p style="font-size: 3vh; line-height: 1.6">
+														October 27th is the farm’s 10th anniversary* of it
+														becoming a world heritage site. The first 500
+														visitors to it could get a prize*! If you have time,
+														check out Isesaki’s Meisen silk, too!
+													</p>
+													<p style="font-size: 1.6vh; line-height: 1.2">
+														* anniversary: 記念日 <br />
+														* prize: 賞品<br />
+													</p>
+													<div class="numbertext">6 / 6</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- Navigation buttons -->
+										<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+										<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+										<br />
+									</div>
+									<div class="modal-footer"></div>
+
+									<!-- Thumbnails -->
+									<div class="thumbnail-container">
+										<img
+											class="thumbnail"
+											src="Web/1 - Tajima Yahei/1.jpg"
+											alt="David, George, and Nick at the Tajima Yahei Sericulture Farm"
+											onclick="currentSlide(1)"
+										/>
+										<img
+											class="thumbnail"
+											src="Web/1 - Tajima Yahei/2.jpg"
+											alt="The Story of Tajima Yahei: The Yagura"
+											onclick="currentSlide(2)"
+										/>
+										<img
+											class="thumbnail"
+											src="Web/1 - Tajima Yahei/3.JPG"
+											alt="The Story of Tajima Yahei: From Isesaki to Italy"
+											onclick="currentSlide(3)"
+										/>
+										<img
+											class="thumbnail"
+											src="Web/1 - Tajima Yahei/4.JPG"
+											alt="The Story of Tajima Yahei: Under the Microscope"
+											onclick="currentSlide(4)"
+										/>
+										<img
+											class="thumbnail"
+											src="Web/1 - Tajima Yahei/5.JPG"
+											alt="The Story of Tajima Yahei: Amazing Silk"
+											onclick="currentSlide(5)"
+										/>
+										<img
+											class="thumbnail"
+											src="Web/1 - Tajima Yahei/6.JPG"
+											alt="The Story of Tajima Yahei: The	10th Anniversary"
+											onclick="currentSlide(6)"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Audio -->
+
+					<audio id="audio1-1a" class="playondemand">
+						<source src="./audio/audio1-1a.mp3" type="audio/mp3" />
+					</audio>
+					<audio id="audio1-1b" class="playondemand">
+						<source src="./audio/audio1-1b.mp3" type="audio/mp3" />
+					</audio>
+					<audio id="audio1-1c" class="playondemand">
+						<source src="./audio/audio1-1c.mp3" type="audio/mp3" />
+					</audio>
+					<audio id="audio1-1d" class="playondemand">
+						<source src="./audio/audio1-1d.mp3" type="audio/mp3" />
+					</audio>
+					<audio id="audio1-1e" class="playondemand">
+						<source src="./audio/audio1-1e.mp3" type="audio/mp3" />
+					</audio>
+					<audio id="audio1-1f" class="playondemand">
+						<source src="./audio/audio1-1f.mp3" type="audio/mp3" />
+					</audio>
+					<audio id="audio1-1" class="playondemand">
+						<source src="./audio/audio1-1.mp3" type="audio/mp3" />
+					</audio>
+				</div>
+			</div>
+			<!-- Closing the container div -->
+		</div>
+		<!-- Closing the viewport div -->
+
+		<script type="text/javascript" src="scripts-slideshow.js"></script>
+	</body>
+</html>

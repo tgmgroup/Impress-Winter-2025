@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+
+		<link href="style.css" rel="stylesheet" />
+		<link href="style-halloween-button.css" rel="stylesheet" />
+		<link href="style-slideshow.css" rel="stylesheet" />
+		<link href="tooltip.css" rel="stylesheet" />
+		<link href="style-modal-split.css" rel="stylesheet" />
+		<meta
+			name="viewport"
+			content="width=1920, height=1080, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<title>Impress Magazine - Winter, 2025</title>
+		<link rel="icon" type="image/x-icon" href="nav-images/logo.png" />
+		<link id="favicon" rel="shortcut icon" href="nav-images/logo.png" />
+		<script type="text/javascript" src="scripts.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
+	<body>
+		<div id="viewport">
+			<div id="container">
+				<!-- Left Menu -->
+
+				<div class="item sidebar sidebar-left">
+					<div class="item header header-left">
+						<form>
+							<button
+								class="menu-button clickable"
+								type="submit"
+								formaction="../index.html"
+							>
+								<h6>Impress<br />Magazine</h6>
+							</button>
+						</form>
+					</div>
+
+					<div class="left-menu">
+						<div class="left-menu-button">
+							<a href="index.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/front.png"
+									alt="Link to Front Cover"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="1.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/1.png"
+									alt="Link to Page 1"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="1.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/2.png"
+									alt="Link to Page 2"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="3.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/3.png"
+									alt="Link to Page 3"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="3.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/4.png"
+									alt="Link to Page 4"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="5.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/5.png"
+									alt="Link to Page 5"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="5.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/6.png"
+									alt="Link to Page 6"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="cover.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/back.png"
+									alt="Link to Back Cover"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="about.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/about.png"
+							/></a>
+						</div>
+					</div>
+					<!-- Closing the left-menu div -->
+
+					<div class="item footer footer-left-top">
+						<form>
+							<button
+								class="menu-button-small clickable"
+								type="submit"
+								formaction="3.html"
+							>
+								<h6>&lt; Previous</h6>
+							</button>
+						</form>
+					</div>
+					<div class="item footer footer-left-bottom">
+						<form>
+							<button
+								class="menu-button-small clickable"
+								type="submit"
+								formaction="cover.html"
+							>
+								<h6>Next &gt;</h6>
+							</button>
+						</form>
+					</div>
+				</div>
+				<!-- Closing the sidebar div -->
+
+				<div class="item gap-left"></div>
+
+				<div
+					class="item content-center"
+					style="
+						background-image: url('Web/page056.jpg');
+						background-size: contain;
+						background-position: left;
+						background-attachment: local;
+						background-repeat: no-repeat;
+						background-color: #000000;
+					"
+				>
+					<div class="center-items">
+						<!-- Buttons -->
+
+						<button
+							class="center-items right-nav-buttons clickable"
+							type="button"
+							onClick="PlayAndShow('audio1-1', 'text1-1', 'play1-1')"
+							style="position: absolute; top: 5vw; left: 89vw"
+						>
+							<img
+								id="play1-1"
+								class="audio-button-image clickable"
+								src="nav-images/play-g79150a13d_1280.png"
+							/>
+							<h6>The Best Places in Gunma</h6>
+						</button>
+
+						<button
+							class="center-items right-nav-buttons clickable"
+							type="button"
+							onClick="PlayAndShow('audio2-1', 'text2-1', 'play2-1')"
+							style="position: absolute; top: 13vw; left: 89vw"
+						>
+							<img
+								id="play2-1"
+								class="audio-button-image clickable"
+								src="nav-images/play-g79150a13d_1280.png"
+							/>
+							<h6>Haunted Places in Japan</h6>
+						</button>
+
+						<!-- Modal Text -->
+
+						<div class="items hidden-text" id="text1-1">
+							<!-- Modal content -->
+							<div class="modal-content-slideshow">
+								<div class="modal-header">
+									<span
+										class="close clickable"
+										onClick="ResetPlayAndShow('audio1-1', 'text1-1', 'play1-1')"
+										>&times;</span
+									>
+								</div>
+
+								<div class="modal-body">
+									<!-- Add the image slideshow here -->
+									<div id="slideshow-container1" class="slideshow-container">
+										<!-- Full-width images with number text -->
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="Web/5 - Fall Travel/1.png"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="The Source of the Ikaho Hot Springs"
+												/>
+												<div class="caption-container">
+													<span
+													class="modal-play clickable"
+													onClick="PlaySound('audio1-1a', 'play1-1a')"
+													><img
+														id="play1-1a"
+														class="audio-button-image clickable"
+														src="nav-images/play-g79150a13d_1280.png"
+												/></span>
+													<p style="font-size: 3vh; line-height: 2">
+														Fall is a great time of year to get out of the house
+														and into nature. In Gunma, there are lots of fun
+														places to visit and fall activities to participate
+														in*. Here are some recommendations* from Dai 2
+														Junior High School:
+													</p>
+													<p style="font-size: 2vh; line-height: 2">
+														* participate in: 参加する <br />
+														* recommendation: おすすめ<br />
+													</p>
+													<div class="numbertext">1 / 5</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="Web/5 - Fall Travel/2.png"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Ikaho Hot Springs"
+												/>
+												<div class="caption-container">
+													<span
+													class="modal-play clickable"
+													onClick="PlaySound('audio1-1b', 'play1-1b')"
+													><img
+														id="play1-1b"
+														class="audio-button-image clickable"
+														src="nav-images/play-g79150a13d_1280.png"
+												/></span>
+													<p style="font-size: 3vh; line-height: 2">
+														Have you been feeling a little cold as the weather
+														changes? Check out* some of the many onsens at
+														Kusatsu or Ikaho. Or if you like getting out in the
+														forest head over to* Tsumagoi and spend a night
+														camping.
+													</p>
+													<p style="font-size: 2vh; line-height: 2">
+														* check out: 調べる<br />
+														* head over to: ～に行く <br />
+													</p>
+													<div class="numbertext">2 / 5</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="Web/5 - Fall Travel/3.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Mt. Akagi in the Fall"
+												/>
+												<div class="caption-container">
+													<span
+													class="modal-play clickable"
+													onClick="PlaySound('audio1-1c', 'play1-1c')"
+													><img
+														id="play1-1c"
+														class="audio-button-image clickable"
+														src="nav-images/play-g79150a13d_1280.png"
+												/></span>
+													<p style="font-size: 3vh; line-height: 2">
+														The various mountains in Gunma are also beautiful
+														this time of year due to the changing of the leaves.
+														Mount Akagi or Mount Myogi are great places to hike.
+														And if you’re feeling hungry, there is a great apple
+														farm in Numata.
+													</p>
+													<p style="font-size: 2vh; line-height: 2">
+														&nbsp;<br />
+													</p>
+													<div class="numbertext">3 / 5</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="Web/5 - Fall Travel/4.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="The Shrine at Konnyaku Park"
+												/>
+												<div class="caption-container">
+													<span
+													class="modal-play clickable"
+													onClick="PlaySound('audio1-1d', 'play1-1d')"
+													><img
+														id="play1-1d"
+														class="audio-button-image clickable"
+														src="nav-images/play-g79150a13d_1280.png"
+												/></span>
+													<p style="font-size: 3vh; line-height: 2">
+														But if you just want to stay indoors*, head over to
+														Konnyaku Park in Tomioka, where you can try making
+														your own <i>konnyaku</i> jelly.
+													</p>
+													<p style="font-size: 2vh; line-height: 2">
+														* stay indoors: 家にいる<br />
+													</p>
+													<div class="numbertext">4 / 5</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="Web/5 - Fall Travel/5.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="George's Son at the Ikaho Steps"
+												/>
+												<div class="caption-container">
+													<span
+													class="modal-play clickable"
+													onClick="PlaySound('audio1-1e', 'play1-1e')"
+													><img
+														id="play1-1e"
+														class="audio-button-image clickable"
+														src="nav-images/play-g79150a13d_1280.png"
+												/></span>
+													<p style="font-size: 3vh; line-height: 2">
+														There are so many great things to do in Gunma in the
+														fall! What do you like to do in the fall?
+													</p>
+													<p style="font-size: 2vh; line-height: 2">
+														&nbsp;<br />
+													</p>
+													<div class="numbertext">5 / 5</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- Navigation buttons -->
+										<a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+										<a class="next" onclick="plusSlides1(1)">&#10095;</a>
+
+										<br />
+									</div>
+									<div class="modal-footer"></div>
+
+									<!-- Thumbnails -->
+									<div class="thumbnail-container">
+										<img
+											class="thumbnail1 thumbnail"
+											src="Web/5 - Fall Travel/1.png"
+											alt="The Source of the Ikaho Hot Springs"
+											onclick="currentSlide1(1)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="Web/5 - Fall Travel/2.png"
+											alt="Ikaho Hot Springs"
+											onclick="currentSlide1(2)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="Web/5 - Fall Travel/3.jpg"
+											alt="Mt. Akagi in the Fall"
+											onclick="currentSlide1(3)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="Web/5 - Fall Travel/4.jpg"
+											alt="The Shrine at Konnyaku Park"
+											onclick="currentSlide1(4)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="Web/5 - Fall Travel/5.jpg"
+											alt="George's Son at the Ikaho Steps"
+											onclick="currentSlide1(5)"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="items hidden-text" id="text2-1">
+							<!-- Modal content -->
+							<div class="modal-content-slideshow">
+								<div class="modal-header">
+									<span
+										class="close clickable"
+										onClick="ResetPlayAndShow('audio2-1', 'text2-1', 'play2-1')"
+										>&times;</span
+									>
+								</div>
+
+								<div class="modal-body">
+									<!-- Add the image slideshow here -->
+									<div id="slideshow-container2" class="slideshow-container">
+										<!-- Full-width images with number text -->
+										<div class="mySlides2">
+											<div class="slide-content">
+												<img
+													src="Web/6 - Scary Places/1.png"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Himeji Castle"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio2-1a', 'play2-1a')"
+														><img
+															id="play2-1a"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+
+													<p style="font-size: 3vh; line-height: 1.6">
+														If you like traveling, here are some interesting
+														places for you to visit! These two places are the
+														origins* of some of the scariest stories in Japan.
+														Read on and learn about them!.
+													</p>
+													<p style="font-size: 1.6vh; line-height: 1.1">
+														* origin: 由来（ゆらい）<br />
+													</p>
+													<div class="numbertext">1 / 6</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides2">
+											<div class="slide-content">
+												<img
+													src="Web/6 - Scary Places/2.png"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Himeji Castle"
+												/>
+												<div class="caption-container">
+													<span
+													class="modal-play clickable"
+													onClick="PlaySound('audio2-1b', 'play2-1b')"
+													><img
+														id="play2-1b"
+														class="audio-button-image clickable"
+														src="nav-images/play-g79150a13d_1280.png"
+												/></span>
+													<h4>1. Himeji Castle</h4>
+													<p style="font-size: 3vh; line-height: 2">
+														Did you know that the movie <i>Ring</i> comes from
+														the beautiful Himeji Castle? This movie is based on
+														the story <i>Banshu Sarayashiki</i>.
+													</p>
+													<p style="font-size: 2vh; line-height: 2">
+														&nbsp;<br />
+													</p>
+													<div class="numbertext">2 / 6</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides2">
+											<div class="slide-content">
+												<img
+													src="Web/6 - Scary Places/3.JPG"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Okiku's Well at Himeji Castle"
+												/>
+												<div class="caption-container">
+													<span
+													class="modal-play clickable"
+													onClick="PlaySound('audio2-1c', 'play2-1c')"
+													><img
+														id="play2-1c"
+														class="audio-button-image clickable"
+														src="nav-images/play-g79150a13d_1280.png"
+												/></span>
+													<h4>The Story of <i>Banshu Sarayashiki</i></h4>
+													<p style="font-size: 3vh; line-height: 1.5">
+														The evil Tetsuzan says Okiku stole a treasured*
+														plate*, then kills* her and throws her into a well*.
+														If you go to Himeji Castle, you can see that well...
+														and you might hear her counting plates from the
+														bottom of the well.
+													</p>
+													<p style="font-size: 2vh; line-height: 1.2">
+														* treasured: 秘蔵（ひぞう） <br />
+														* plate: お皿 <br />
+														* kill: 殺す <br />
+														* well: 井戸 <br />
+													</p>
+													<div class="numbertext">3 / 6</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides2">
+											<div class="slide-content">
+												<img
+													src="Web/6 - Scary Places/4.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="A Statue on Mt. Fear"
+												/>
+												<div class="caption-container">
+													<span
+													class="modal-play clickable"
+													onClick="PlaySound('audio2-1d', 'play2-1d')"
+													><img
+														id="play2-1d"
+														class="audio-button-image clickable"
+														src="nav-images/play-g79150a13d_1280.png"
+												/></span>
+													<h4>2. <i>Osorezan</i></h4>
+													<p style="font-size: 3vh; line-height: 2">
+														This mountain’s name is Mount Fear*, so it must be a
+														scary place. It is said that people can cross a
+														river here, the <i>Sanzu no Kawa</i>, to enter Hell.
+													</p>
+													<p style="font-size: 2vh; line-height: 2">
+														* fear: 恐怖（きょうふ） <br />
+													</p>
+													<div class="numbertext">4 / 6</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides2">
+											<div class="slide-content">
+												<img
+													src="Web/6 - Scary Places/5.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="The Bridge over the Sanzu River"
+												/>
+												<div class="caption-container">
+													<span
+													class="modal-play clickable"
+													onClick="PlaySound('audio2-1e', 'play2-1e')"
+													><img
+														id="play2-1e"
+														class="audio-button-image clickable"
+														src="nav-images/play-g79150a13d_1280.png"
+												/></span>
+													<p style="font-size: 3vh; line-height: 2">
+														There is also a temple here, <i>Bodai-ji</i>, that
+														holds a festival to talk with the dead.
+													</p>
+													<p style="font-size: 2vh; line-height: 2">
+														&nbsp; <br />
+													</p>
+													<div class="numbertext">5 / 6</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides2">
+											<div class="slide-content">
+												<img
+													src="Web/6 - Scary Places/6.png"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Himeji Castle"
+												/>
+												<div class="caption-container">
+													<span
+													class="modal-play clickable"
+													onClick="PlaySound('audio2-1f', 'play2-1f')"
+													><img
+														id="play2-1f"
+														class="audio-button-image clickable"
+														src="nav-images/play-g79150a13d_1280.png"
+												/></span>
+													<p style="font-size: 3vh; line-height: 2">
+														What do you think? Do you know any scary places?
+														Would you like to see these places someday?
+													</p>
+													<p style="font-size: 2vh; line-height: 2"></p>
+													<div class="numbertext">6 / 6</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- Navigation buttons -->
+										<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+										<a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+										<br />
+									</div>
+									<div class="modal-footer"></div>
+
+									<!-- Thumbnails -->
+									<div class="thumbnail-container">
+										<img
+											class="thumbnail2 thumbnail"
+											src="Web/6 - Scary Places/1.png"
+											alt="Himeji Castle"
+											onclick="currentSlide1(1)"
+										/>
+										<img
+											class="thumbnail2 thumbnail"
+											src="Web/6 - Scary Places/2.png"
+											alt="Himeji Castle"
+											onclick="currentSlide1(2)"
+										/>
+										<img
+											class="thumbnail2 thumbnail"
+											src="Web/6 - Scary Places/3.jpg"
+											alt="Okiku's Well at Himeji Castle"
+											onclick="currentSlide1(3)"
+										/>
+										<img
+											class="thumbnail2 thumbnail"
+											src="Web/1 - Tajima Yahei/4.jpg"
+											alt="A Statue on Mt. Fear"
+											onclick="currentSlide1(4)"
+										/>
+										<img
+											class="thumbnail2 thumbnail"
+											src="Web/6 - Scary Places/5.jpg"
+											alt="The Bridge of the Sanzu River"
+											onclick="currentSlide1(5)"
+										/>
+										<img
+											class="thumbnail2 thumbnail"
+											src="Web/6 - Scary Places/6.png"
+											alt="Himeji Castle"
+											onclick="currentSlide1(6)"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Audio -->
+
+						<audio id="audio1-1" class="playondemand">
+							<source src="./audio/audio5-1.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1a" class="playondemand">
+							<source src="./audio/audio5-1a.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1b" class="playondemand">
+							<source src="./audio/audio5-1b.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1c" class="playondemand">
+							<source src="./audio/audio5-1c.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1d" class="playondemand">
+							<source src="./audio/audio5-1d.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1e" class="playondemand">
+							<source src="./audio/audio5-1e.mp3" type="audio/mp3" />
+						</audio>
+
+						<audio id="audio2-1" class="playondemand">
+							<source src="./audio/audio5-2.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio2-1a" class="playondemand">
+							<source src="./audio/audio5-2a.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio2-1b" class="playondemand">
+							<source src="./audio/audio5-2b.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio2-1c" class="playondemand">
+							<source src="./audio/audio5-2c.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio2-1d" class="playondemand">
+							<source src="./audio/audio5-2d.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio2-1e" class="playondemand">
+							<source src="./audio/audio5-2e.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio2-1f" class="playondemand">
+							<source src="./audio/audio5-2f.mp3" type="audio/mp3" />
+						</audio>
+
+					</div>
+				</div>
+			</div>
+			<!-- Closing the container div -->
+		</div>
+		<!-- Closing the viewport div -->
+
+		<script type="text/javascript" src="scripts-slideshow-double.js"></script>
+	</body>
+</html>
