@@ -5,12 +5,22 @@
     gap: 1vw; /* Adjust the gap between blocks */
     width: 100%; /* Adjust width as needed */
     height: 100%; /* Adjust height as needed */
+    margin-right: 5vw;  /* Adjust margin as needed */
 }
 
 .about-grid-item {
-    background-color: #000000, 0; /* Background color for blocks */
-    border: 0px solid #ccc; /* Border around blocks */
+    /*background-color: #000000, 0; */ /* Background color for blocks */
+    background-color: #095f81;
+    border: 1px solid #cccccc0f; /* Border around blocks */
+    border-radius: .2vw; /* Rounded corners for blocks */
     display: flex;
+    width: 100%; /* Adjust width as needed */
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.15s;
 
     align-items: center;
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
@@ -22,7 +32,7 @@
 
     justify-content: flex-start; /* Align text to the top of the block */
     align-items: flex-start; /* Align text to the start of the block */
-    margin-right: 4vw;
+    margin-right: 5vw;  /* Adjust margin as needed */
     
 
 }

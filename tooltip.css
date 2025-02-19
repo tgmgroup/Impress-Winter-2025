@@ -3,14 +3,14 @@
     position: relative;
     display: inline;
     cursor: pointer;
-    color: rgb(76, 88, 26); /* Highlight the word */
+    color: rgb(247, 254, 162); /* Highlight the word */
     margin: 0;
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 40vh;
+    width: 20vh;
     background-color: #2f2e2e;
     color: #fff;
     text-align: center;

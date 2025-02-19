@@ -5,11 +5,9 @@
 
 		<link href="style.css" rel="stylesheet" />
 		<link href="style-slideshow.css" rel="stylesheet" />
-		<link href="style-canvas.css" rel="stylesheet" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-		/>
+		<link href="style-slideshow-double.css" rel="stylesheet" />
+		<link href="tooltip.css" rel="stylesheet" />
+		<link href="style-modal-split.css" rel="stylesheet" />
 		<meta
 			name="viewport"
 			content="width=1920, height=1080, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
@@ -18,14 +16,16 @@
 		<link rel="icon" type="image/x-icon" href="nav-images/logo.png" />
 		<link id="favicon" rel="shortcut icon" href="nav-images/logo.png" />
 		<script type="text/javascript" src="scripts.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
-	</head>
 
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
 	<body>
 		<div id="viewport">
 			<div id="container">
-				<!-- Your website content goes here -->
+				<!-- Left Menu -->
 
 				<div class="item sidebar sidebar-left">
 					<div class="item header header-left">
@@ -89,12 +89,12 @@
 									alt="Link to Page 5"
 							/></a>
 						</div>
-						<div class="left-menu-button">
-							<a href="5.html" target="_self"
+						<div class="left-menu-button-halloween">
+							<a href="6.html" target="_self"
 								><img
 									class="left-menu-image clickable"
 									src="nav-images/6.png"
-									alt="Link to Page 6"
+									alt="Link to Page 5"
 							/></a>
 						</div>
 						<div class="left-menu-button">
@@ -170,43 +170,33 @@
 							<h6>Chocolate Money</h6>
 						</button>
 
-						<form
-							action="https://sites.google.com/isesaki-school.ed.jp/silk-story"
-							method="get"
-							target="_blank"
+						<button
+							class="center-items right-nav-buttons clickable"
+							type="button"
+							onClick="PlayAndShow('audio1-2', 'text1-2', 'play1-2')"
+							style="position: absolute; top: 13vw; left: 89vw"
 						>
-							<button
-								class="center-items right-nav-buttons clickable"
-								type="submit"
-								style="position: absolute; top: 13vw; left: 89vw"
-							>
-								<img
-									id="play3-1"
-									class="audio-button-image clickable"
-									src="nav-images/play-g79150a13d_1280.png"
-								/>
-								<h6>El Tió de Nadal</h6>
-							</button>
-						</form>
+							<img
+								id="play1-2"
+								class="audio-button-image clickable"
+								src="nav-images/play-g79150a13d_1280.png"
+							/>
+							<h6>El Tió de Nadal</h6>
+						</button>
 
-						<form
-							action="https://impress-kuwamaru-halloween-adventure.isesaki.in/"
-							method="get"
-							target="_blank"
+						<button
+							class="center-items right-nav-buttons clickable"
+							type="button"
+							onClick="PlayAndShow('audio1-2', 'text1-2', 'play1-2')"
+							style="position: absolute; top: 21vw; left: 89vw"
 						>
-							<button
-								class="center-items right-nav-buttons clickable"
-								type="submit"
-								style="position: absolute; top: 21vw; left: 89vw"
-							>
-								<img
-									id="play3-1"
-									class="audio-button-image clickable"
-									src="nav-images/link.png"
-								/>
-								<h6>Vocabulary Word Search</h6>
-							</button>
-						</form>
+							<img
+								id="play1-2"
+								class="audio-button-image clickable"
+								src="nav-images/play-g79150a13d_1280.png"
+							/>
+							<h6>Vocabulary Word Search</h6>
+						</button>
 
 						<!-- Modal Text -->
 
@@ -223,15 +213,15 @@
 
 								<div class="modal-body">
 									<!-- Add the image slideshow here -->
-									<div id="slideshow-container" class="slideshow-container">
+									<div id="slideshow-container1" class="slideshow-container">
 										<!-- Full-width images with number text -->
-										<div class="mySlides">
+										<div class="mySlides1">
 											<div class="slide-content">
 												<img
-													src="Web/1 - Tajima Yahei/1.jpg"
+													src="Web/1/_19164247-d666-40c2-bd34-6418d13cc4dd.jpg"
 													class="slide-image"
 													style="height: 90vh; object-fit: cover"
-													alt="George, David, and Nick at the Tajima Yahei Sericulture Farm"
+													alt="Santa Claus giving out presents"
 												/>
 												<div class="caption-container">
 													<span
@@ -242,33 +232,33 @@
 															class="audio-button-image clickable"
 															src="nav-images/play-g79150a13d_1280.png"
 													/></span>
-													<p style="font-size: 3vh; line-height: 1.6">
-														Isesaki is not a big city in Japan, but there are
-														quite a few unique things in our town! On October
-														4th, three of us (David, George, and Nick), went to
-														the Tajima Yahei Sericulture Farm. It’s a World
-														Heritage site and was part of Japan’s silk
-														revolution*. Have you ever been there? We thought we
-														knew the story of this World Heritage, but we took a
-														look* again and learned some new things that we’ll
-														share with you, so keep reading!
+													<p style="font-size: 3vh; line-height: 2">
+														Many people around the world have Christmas and
+														Santa Claus. But some people don’t get presents from
+														Santa.
+														<span class="tooltip"
+															>Jewish<span class="tooltiptext"
+																>ユダヤ: people that follow the Jewish religion
+																(Jews)</span
+															></span
+														>
+														people are some of those people.
 													</p>
-													<p style="font-size: 1.6vh; line-height: 1.1">
-														* revolution: 革命（かくめい）<br />
-														* take a look: 見てみる
+													<p style="font-size: 2vh; line-height: 2">
+														* Jewish: ユダヤ <br />
 													</p>
-													<div class="numbertext">1 / 6</div>
+													<div class="numbertext">1 / 3</div>
 												</div>
 											</div>
 										</div>
 
-										<div class="mySlides">
+										<div class="mySlides1">
 											<div class="slide-content">
 												<img
-													src="Web/1 - Tajima Yahei/2.jpg"
+													src="Web/1/alla-kemelmakher-MRKFGJHUQRI-unsplash.jpg"
 													class="slide-image"
 													style="height: 90vh; object-fit: cover"
-													alt="The Story of Tajima Yahei: The Yagura"
+													alt="a Menorah and some jelly donuts"
 												/>
 												<div class="caption-container">
 													<span
@@ -279,33 +269,33 @@
 															class="audio-button-image clickable"
 															src="nav-images/play-g79150a13d_1280.png"
 													/></span>
-													<h4>Keeping Cool: <br />The Story of Tajima Yahei</h4>
-													<p style="font-size: 3vh; line-height: 1.5">
-														Tajima Yahei (1822-1898) changed the way that*
-														silkworms were farmed* in Japan. He understood that
-														it was important to keep silkworms cool. He built a
-														silkworm farm and added a yagura (a roof with
-														windows). This style became known as
-														<i>“Seiryo-iku”</i> and was copied by many Japanese
-														farmers.
+													<p style="font-size: 3vh; line-height: 2">
+														Jewish people have Hanukkah
+														<span class="tooltip"
+															>instead of<span class="tooltiptext"
+																>~の代わりに: to have A, not B</span
+															></span
+														>
+														Christmas. Instead of a Christmas tree, they have 8
+														candles on a <i>menorah</i>. Instead of Christmas
+														cookies, they have jelly donuts. And instead of
+														presents, they get something called <i>gelt</i>.
 													</p>
-													<p style="font-size: 1.6vh; line-height: 1.2">
-														* the way that: ～の方法 <br />
-														* to farm: 養殖（ようしょく）<br />
-														* 農耕（のうこう）する<br />
+													<p style="font-size: 2vh; line-height: 2">
+														* instead of: ~の代わりに<br />
 													</p>
-													<div class="numbertext">2 / 6</div>
+													<div class="numbertext">2 / 3</div>
 												</div>
 											</div>
 										</div>
 
-										<div class="mySlides">
+										<div class="mySlides1">
 											<div class="slide-content">
 												<img
-													src="Web/1 - Tajima Yahei/3.JPG"
+													src="Web/1/23554014643_d66b9f2394_k.jpg"
 													class="slide-image"
 													style="height: 90vh; object-fit: cover"
-													alt="The Story of Tajima Yahei: From Isesaki to Italy"
+													alt="Gelt"
 												/>
 												<div class="caption-container">
 													<span
@@ -316,128 +306,83 @@
 															class="audio-button-image clickable"
 															src="nav-images/play-g79150a13d_1280.png"
 													/></span>
-													<h4>From Isesaki to Italy</h4>
-													<p style="font-size: 3vh; line-height: 1.6">
-														Did you know that Shibusawa Eichi and Tajima Yahei
-														were relatives*? With some help from Mr. Shibusawa,
-														Mr. Tajima started to sell silkworm eggs to Italy
-														and other European countries. In 1879, he visited
-														Italy by ship. It took two months to get there! And
-														he was the first person from Gunma to go all the
-														way* around the world.
+													<p style="font-size: 3vh; line-height: 2">
+														Gelt is chocolate money. It’s a
+														<span class="tooltip"
+															>round<span class="tooltiptext"
+																>丸い: like a circle</span
+															></span
+														>
+														circle of chocolate inside an
+														<span class="tooltip"
+															>aluminum foil<span class="tooltiptext"
+																>アルミホイル: aluminum foil</span
+															></span
+														>
+														<span class="tooltip"
+															>wrapper<span class="tooltiptext"
+																>包み紙: like wrapping paper</span
+															></span
+														>. It looks like money. It’s not really delicious,
+														but it’s sweet.
 													</p>
-													<p style="font-size: 1.6vh; line-height: 1.2">
-														* relatives: 親戚（しんせき） <br />
-														* all the way: 行くところまで・完全に<br />
+													<p style="font-size: 3vh; line-height: 2">
+														Would you like to try it?
 													</p>
-													<div class="numbertext">3 / 6</div>
+													<p style="font-size: 2vh; line-height: 2">
+														* round: 丸い<br />
+														* aluminum foil: アルミホイル<br />
+														* wrapper: 包み紙<br />
+													</p>
+													<div class="numbertext">3 / 3</div>
 												</div>
 											</div>
 										</div>
 
-										<div class="mySlides">
+										<div class="mySlides1">
 											<div class="slide-content">
 												<img
-													src="Web/1 - Tajima Yahei/4.JPG"
+													src="Web/1/1600px-Classic_Hanukkah_sufganiyot.JPG"
 													class="slide-image"
 													style="height: 90vh; object-fit: cover"
-													alt="The Story of Tajima Yahei: Under the Microscope"
+													alt="Sufganiyot"
 												/>
 												<div class="caption-container">
 													<span
 														class="modal-play clickable"
-														onClick="PlaySound('audio1-1d', 'play1-1d')"
+														onClick="PlaySound('audio1-1c', 'play1-1c')"
 														><img
 															id="play1-1d"
 															class="audio-button-image clickable"
 															src="nav-images/play-g79150a13d_1280.png"
 													/></span>
-													<h4>Under the Microscope</h4>
-													<p style="font-size: 3vh; line-height: 1.6">
-														Tajima Yahei learned how to use microscopes* to
-														study silkworms in Europe, and he brought one home
-														from Italy to study sick silkworms. His research
-														helped people grow more silkworms.
+													<h4>About Hanukkah</h4>
+													<p style="font-size: 2vh; line-height: 2">
+														Hanukkah is a special Jewish holiday that lasts
+														eight nights. A long time ago, there was a miracle
+														in a Jewish temple. People had only a little bit of
+														oil, but it burned for eight days!
 													</p>
-													<p style="font-size: 1.6vh; line-height: 1.2">
-														* microscope: けんびきょう顕微鏡 <br />
+													<p style="font-size: 2vh; line-height: 2">
+														Now, people people light candles on a special stand
+														called a menorah. They add one more candle each
+														night. Families eat yummy fried foods like potato
+														pancakes (latkes) and donuts (sufganiyot). Kids play
+														a game with a spinning top called a dreidel.
+														Sometimes, they get small gifts too!
 													</p>
-													<div class="numbertext">4 / 6</div>
-												</div>
-											</div>
-										</div>
+													<p style="font-size: 2vh; line-height: 2">
+														Hanukkah is a nice time to be with family!
+													</p>
 
-										<div class="mySlides">
-											<div class="slide-content">
-												<img
-													src="Web/1 - Tajima Yahei/5.JPG"
-													class="slide-image"
-													style="height: 90vh; object-fit: cover"
-													alt="The Story of Tajima Yahei: Amazing Silk"
-												/>
-												<div class="caption-container">
-													<span
-														class="modal-play clickable"
-														onClick="PlaySound('audio1-1e', 'play1-1e')"
-														><img
-															id="play1-1e"
-															class="audio-button-image clickable"
-															src="nav-images/play-g79150a13d_1280.png"
-													/></span>
-													<h4>Amazing Silk</h4>
-													<p style="font-size: 3vh; line-height: 1.6">
-														At this time, the world wanted a lot of silk, and
-														people wanted silk and silkworms from Japan. At its
-														height*, the Tajima Yahei farm employed* around 100
-														workers and made millions* in today’s* money.
-													</p>
-													<p style="font-size: 1.6vh; line-height: 1.2">
-														* height: さいせいき最盛期 <br />
-														* employ: やと雇う <br />
-														* millions: 何百万 <br />
-														* today’s: 現在の <br />
-													</p>
-													<div class="numbertext">5 / 6</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="mySlides">
-											<div class="slide-content">
-												<img
-													src="Web/1 - Tajima Yahei/6.JPG"
-													class="slide-image"
-													style="height: 90vh; object-fit: cover"
-													alt="The Story of Tajima Yahei: The	10th Anniversary"
-												/>
-												<div class="caption-container">
-													<span
-														class="modal-play clickable"
-														onClick="PlaySound('audio1-1f', 'play1-1f')"
-														><img
-															id="play1-1f"
-															class="audio-button-image clickable"
-															src="nav-images/play-g79150a13d_1280.png"
-													/></span>
-													<h4>The 10th Anniversary</h4>
-													<p style="font-size: 3vh; line-height: 1.6">
-														October 27th is the farm’s 10th anniversary* of it
-														becoming a world heritage site. The first 500
-														visitors to it could get a prize*! If you have time,
-														check out Isesaki’s Meisen silk, too!
-													</p>
-													<p style="font-size: 1.6vh; line-height: 1.2">
-														* anniversary: 記念日 <br />
-														* prize: 賞品<br />
-													</p>
-													<div class="numbertext">6 / 6</div>
+													<div class="numbertext">*</div>
 												</div>
 											</div>
 										</div>
 
 										<!-- Navigation buttons -->
-										<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-										<a class="next" onclick="plusSlides(1)">&#10095;</a>
+										<a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+										<a class="next" onclick="plusSlides1(1)">&#10095;</a>
 
 										<br />
 									</div>
@@ -446,76 +391,341 @@
 									<!-- Thumbnails -->
 									<div class="thumbnail-container">
 										<img
-											class="thumbnail"
-											src="Web/1 - Tajima Yahei/1.jpg"
-											alt="David, George, and Nick at the Tajima Yahei Sericulture Farm"
-											onclick="currentSlide(1)"
+											class="thumbnail1 thumbnail"
+											src="Web/1/_19164247-d666-40c2-bd34-6418d13cc4dd.jpg"
+											alt="Santa Claus giving out presents"
+											onclick="currentSlide1(1)"
 										/>
 										<img
-											class="thumbnail"
-											src="Web/1 - Tajima Yahei/2.jpg"
-											alt="The Story of Tajima Yahei: The Yagura"
-											onclick="currentSlide(2)"
+											class="thumbnail1 thumbnail"
+											src="Web/1/alla-kemelmakher-MRKFGJHUQRI-unsplash.jpg"
+											alt="a Menorah and some jelly donuts"
+											onclick="currentSlide1(2)"
 										/>
 										<img
-											class="thumbnail"
-											src="Web/1 - Tajima Yahei/3.JPG"
-											alt="The Story of Tajima Yahei: From Isesaki to Italy"
-											onclick="currentSlide(3)"
+											class="thumbnail1 thumbnail"
+											src="Web/1/23554014643_d66b9f2394_k.jpg"
+											alt="Gelt"
+											onclick="currentSlide1(3)"
 										/>
 										<img
-											class="thumbnail"
-											src="Web/1 - Tajima Yahei/4.JPG"
-											alt="The Story of Tajima Yahei: Under the Microscope"
-											onclick="currentSlide(4)"
-										/>
-										<img
-											class="thumbnail"
-											src="Web/1 - Tajima Yahei/5.JPG"
-											alt="The Story of Tajima Yahei: Amazing Silk"
-											onclick="currentSlide(5)"
-										/>
-										<img
-											class="thumbnail"
-											src="Web/1 - Tajima Yahei/6.JPG"
-											alt="The Story of Tajima Yahei: The	10th Anniversary"
-											onclick="currentSlide(6)"
+											class="thumbnail1 thumbnail"
+											src="Web/1/1600px-Classic_Hanukkah_sufganiyot.JPG"
+											alt="Sufganiyot"
+											onclick="currentSlide1(4)"
 										/>
 									</div>
 								</div>
 							</div>
 						</div>
+
+						<div class="items hidden-text" id="text1-2">
+							<!-- Modal content -->
+							<div class="modal-content-slideshow">
+								<div class="modal-header">
+									<span
+										class="close clickable"
+										onClick="ResetPlayAndShow('audio1-2', 'text1-2', 'play1-2')"
+										>&times;</span
+									>
+								</div>
+
+								<div class="modal-body">
+									<!-- Add the image slideshow here -->
+									<div id="slideshow-container2" class="slideshow-container">
+										<!-- Full-width images with number text -->
+										<div class="mySlides2">
+											<div class="slide-content">
+												<img
+													src="Web/1/kisoulou-meIw33_r6Wo-unsplash.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Bûche de Noël"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-2a', 'play1-2a')"
+														><img
+															id="play1-2a"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+
+													<p style="font-size: 3vh; line-height: 1.6">
+														In Japan, some people have a <i>Bûche de Noël</i> at
+														Christmas. In English, it is called a
+														<span class="tooltip"
+															>Yule<span class="tooltiptext"
+																>クリスマス: another word for Christmas</span
+															></span
+														>
+														<span class="tooltip"
+															>log<span class="tooltiptext"
+																>丸太: what a tree becomes when it is cut down
+																and its branches taken off</span
+															></span
+														>. It’s a long,
+														<span class="tooltip"
+															>round<span class="tooltiptext"
+																>丸い: like a circle</span
+															></span
+														>
+														Christmas cake. It’s like a roll cake. In other
+														countries, a Yule log is just wood. People burn it
+														at Christmas in a fireplace for 12 days.
+													</p>
+													<p style="font-size: 1.6vh; line-height: 1.1">
+														* Yule: クリスマス <br />
+														* log: 丸太 <br />
+													</p>
+													<div class="numbertext">1 / 4</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides2">
+											<div class="slide-content">
+												<img
+													src="Web/1/Tió_de_Nadal.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Tió_de_Nadal"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-2b', 'play1-2b')"
+														><img
+															id="play1-2b"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+													<p style="font-size: 3vh; line-height: 2">
+														But in a
+														<span class="tooltip"
+															>part<span class="tooltiptext"
+																>部分: some of something</span
+															></span
+														>
+														of Spain called Catalan, there’s a really fun
+														<span class="tooltip"
+															>kind of<span class="tooltiptext"
+																>種類: one group of something</span
+															></span
+														>
+														Yule log. It’s called a <i>Tió de Nadal.</i>
+													</p>
+													<p style="font-size: 2vh; line-height: 2">
+														* part: 部分<br />
+														* kind of: 種類
+													</p>
+													<div class="numbertext">2 / 4</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides2">
+											<div class="slide-content">
+												<img
+													src="Web/1/Nens_fent_cagar_el_Tió.png"
+													alt="Hitting the Tió de Nadal"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-2c', 'play1-2c')"
+														><img
+															id="play1-2c"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+													
+
+													<p style="font-size: 3vh; line-height: 1.4">
+														This Tio de Nadal is a log filled with candies and
+														toys. Children sing:
+													</p>
+													<p
+														style="
+															font-size: 2.5vh;
+															line-height: 1.9;
+															text-align: center;
+														"
+													>
+														“<span class="tooltip"
+															>Poop<span class="tooltiptext"
+																>うんち(を出す)</span
+															></span
+														>, log! Poop out candies, <br />don’t poop out fish,
+														they are too
+														<span class="tooltip"
+															>salty<span class="tooltiptext"
+																>しょっぱい : the taste of salt</span
+															></span
+														>,<br />
+														poop candies, they taste better, <br />and if you
+														don’t poop, <br />I will hit you with a
+														<span class="tooltip"
+															>stick<span class="tooltiptext"
+																>棒: a long piece of wood</span
+															></span
+														>!”
+													</p>
+													<p style="font-size: 3vh; line-height: 1.4">
+														They hit the log and sing the song, and the log will
+														poop.
+													</p>
+													<p style="font-size: 2vh; line-height: 1.2">
+														* poop: うんち(を出す) <br />
+														* salty: しょっぱい <br />
+														* stick: 棒
+													</p>
+													<span >
+														<form>
+															<button
+																class="menu-button clickable"
+																type="submit"
+																formaction="https://www.tiodenadal.online/caga-tio-song-with-lyrics/"
+																formtarget="_blank"
+																style="height: 10vh; width: 20vh;"
+															>
+																<img
+																	class="audio-button-image clickable"
+																	src="nav-images/link.png"
+																/>
+																<h6>Caga Tio Song</h6>
+															</button>
+														</form>
+														</span>
+													
+
+													<div class="numbertext">3 / 4</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides2">
+											<div class="slide-content">
+												<img
+													src="Web/1/65123383_47d7cad6e6_h.jpg"
+													alt="Turrón"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-2d', 'play1-2d')"
+														><img
+															id="play1-2d"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+
+													<p style="font-size: 3vh; line-height: 2">
+														After it poops, people enjoy the small gifts and
+														candies that come out. The Tio de Nadal usually has
+														a special kind of
+														<span class="tooltip"
+															>nougat<span class="tooltiptext"
+																>ヌガー: a soft, chewy candy</span
+															></span
+														>
+														candy called <i>turrón</i>. It’s really good.
+													</p>
+													<p style="font-size: 3vh; line-height: 2">
+														It sounds like fun, doesn’t it?
+													</p>
+													<p style="font-size: 2vh; line-height: 2">
+														* nougat: ヌガー <br />
+													</p>
+													<div class="numbertext">4 / 4</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- Navigation buttons -->
+										<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+										<a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+										<br />
+									</div>
+									<div class="modal-footer"></div>
+
+									<!-- Thumbnails -->
+									<div class="thumbnail-container">
+										<img
+											class="thumbnail2 thumbnail"
+											src="Web/1/kisoulou-meIw33_r6Wo-unsplash.jpg"
+											alt="Bûche de Noël"
+											onclick="currentSlide1(1)"
+										/>
+										<img
+											class="thumbnail2 thumbnail"
+											src="Web/1/Tió_de_Nadal.jpg"
+											alt="Tió_de_Nadal"
+											onclick="currentSlide1(2)"
+										/>
+										<img
+											class="thumbnail2 thumbnail"
+											src="Web/1/Nens_fent_cagar_el_Tió.png"
+											alt="Hitting the Tió de Nadal"
+											onclick="currentSlide1(3)"
+										/>
+										<img
+											class="thumbnail2 thumbnail"
+											src="Web/1/65123383_47d7cad6e6_h.jpg"
+											alt="Turrón"
+											onclick="currentSlide1(4)"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Audio -->
+
+						<audio id="audio1-1" class="playondemand">
+							<source src="./audio/audio1-1.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1a" class="playondemand">
+							<source src="./audio/audio1-1a.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1b" class="playondemand">
+							<source src="./audio/audio1-1b.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1c" class="playondemand">
+							<source src="./audio/audio1-1c.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1d" class="playondemand">
+							<source src="./audio/audio1-1d.mp3" type="audio/mp3" />
+						</audio>
+
+						<audio id="audio1-2" class="playondemand">
+							<source src="./audio/audio1-2.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-2a" class="playondemand">
+							<source src="./audio/audio1-2a.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-2b" class="playondemand">
+							<source src="./audio/audio1-2b.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-2c" class="playondemand">
+							<source src="./audio/audio1-2c.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-2d" class="playondemand">
+							<source src="./audio/audio1-2d.mp3" type="audio/mp3" />
+						</audio>
 					</div>
-
-					<!-- Audio -->
-
-					<audio id="audio1-1a" class="playondemand">
-						<source src="./audio/audio1-1a.mp3" type="audio/mp3" />
-					</audio>
-					<audio id="audio1-1b" class="playondemand">
-						<source src="./audio/audio1-1b.mp3" type="audio/mp3" />
-					</audio>
-					<audio id="audio1-1c" class="playondemand">
-						<source src="./audio/audio1-1c.mp3" type="audio/mp3" />
-					</audio>
-					<audio id="audio1-1d" class="playondemand">
-						<source src="./audio/audio1-1d.mp3" type="audio/mp3" />
-					</audio>
-					<audio id="audio1-1e" class="playondemand">
-						<source src="./audio/audio1-1e.mp3" type="audio/mp3" />
-					</audio>
-					<audio id="audio1-1f" class="playondemand">
-						<source src="./audio/audio1-1f.mp3" type="audio/mp3" />
-					</audio>
-					<audio id="audio1-1" class="playondemand">
-						<source src="./audio/audio1-1.mp3" type="audio/mp3" />
-					</audio>
 				</div>
 			</div>
 			<!-- Closing the container div -->
 		</div>
 		<!-- Closing the viewport div -->
-
-		<script type="text/javascript" src="scripts-slideshow.js"></script>
 	</body>
+
+	<script type="text/javascript" src="scripts-slideshow-double.js"></script>
 </html>
