@@ -41,7 +41,7 @@ var ttss = [
 		},
 		{
 			word: "instead",
-			clue: "I had an ice cream cake (代わり) of a shortcake fro my birthday.",
+			clue: "I had an ice cream cake (代わり) of a shortcake for my birthday.",
 		},
 		{
 			word: "matter",
