@@ -2,8 +2,6 @@
 
 /** This object sets up the word search game, as well as button functions (for solving
  * and for refreshing/setting up a new game).
- *
- * @author Noor Aftab
  *	
  * @param {String} gameId ID of the word search game div (where the actual grid of letters goes)
  * @param {String} listId ID of the div where the list of words to find goes
@@ -18,7 +16,7 @@ function WordSearchController(gameId, listId, solveId, newGameId, instructionsId
 	//an object containing various themes/words for the game
 	var searchTypes = {
 
-		"Math! (please don't run away)": [["Jewish", "instead of", "round", "presents"],
+		"Holidays": [["Jewish", "instead of", "round", "presents"],
 			["aluminum foil", "wrapper", "log", "Yule"],
 			["part of", "kind of", "poop", "gelt"],
 			["salty", "stick", "nougat", "Christmas"],
